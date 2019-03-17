@@ -54,7 +54,7 @@ options {
 ## Quick Start
 
 ```
-docker run -p 53:53/udp -p 53:53 -p 10000:10000 -d fabriziogaliano/docker-bind-gui
+docker run -p 53:53/udp -p 53:53 -p 10000:10000 -d anitoshcloudstack/bind-web-gui
 ```
 
 ## Docker-Compose.yml
@@ -63,7 +63,7 @@ docker run -p 53:53/udp -p 53:53 -p 10000:10000 -d fabriziogaliano/docker-bind-g
 version: '2'
 services:
     dns:
-        image: fabriziogaliano/docker-bind-gui
+        image: anitoshcloudstack/bind-web-gui
 
         container_name: bind_dns_gui
 
